@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى أغلى الناس - أم جوري</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Tahoma', sans-serif;
+            overflow: hidden;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            color: #d63384;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .btn {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+        }
+        .btn:hover {
+            background-color: #c9184a;
+            transform: scale(1.05);
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 25px;
+            color: #590d22;
+            font-size: 18px;
+            line-height: 1.8;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>إلى زوجتي الغالية أم جوري ❤️</h1>
+        <button class="btn" onclick="showSurprise()">اضغطي هنا</button>
+        <div id="surprise" class="hidden-message">
+            أنتِ نور بيتي وسعادة أيامي، وأعظم نعمة أنعم الله بها عليّ. شكراً لكِ يا أم جوري على كل لحظة حب ودفء تمنحينها لنا. أحبكِ طوال العمر! 🥰🌹
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            var message = document.getElementById('surprise');
+            var button = document.querySelector('.btn');
+            message.style.display = 'block';
+            button.style.display = 'none'; // لإخفاء الزر بعد الضغط وزيادة تأثير المفاجأة
+        }
+    </script>
+
+</body>
+</html>
