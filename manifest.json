@@ -1,0 +1,9 @@
+{
+  "name": "إلى أم جوري",
+  "short_name": "أم جوري",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ff9a9e",
+  "theme_color": "#ff4d6d",
+  "icons": []
+}
